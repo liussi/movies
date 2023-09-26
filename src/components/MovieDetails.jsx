@@ -72,7 +72,6 @@ const MovieDetails = () => {
   const getFilmById = filmId => {
     return movieData.find(film => film.id === filmId);
   };
-  console.log(getFilmById);
 
   useEffect(() => {
     fetchMovieData(movieId)
@@ -84,17 +83,18 @@ const MovieDetails = () => {
       });
   }, [movieId]);
 
-  const { id, title, poster_path, backdrop_path } = movieData;
+
+const {  title, poster_path, backdrop_path } = movieData;
 
 
   return (
     <div>
       <button>go to back</button>
       <ul>
-        <li key={id}>
+        <li key={getFilmById.id}>
           <img
             src={`https://image.tmdb.org/t/p/w500${
-              poster_path && backdrop_path
+              poster_path || backdrop_path
             }`}
             width={120}
             height={120}
