@@ -2,13 +2,9 @@
 // import { Outlet,  Link } from 'react-router-dom';
 // import axios from 'axios';
 
-
 // const Home = () => {
 //   const [popularFilm, setPopularFilm] = useState([]);
 
-
-
-  
 //   useEffect(() => {
 
 //     const options = {
@@ -30,8 +26,7 @@
 //       .catch(function (error) {
 //         console.error(error);
 //       });
-      
-  
+
 //   }, []);
 //     // useEffect робить тут /trending/get-trending список найпопулярніших фільмів на сьогодні для створення колекції на головній сторінці.
 //     // тут рендеряться тільки популярні колукції
@@ -47,28 +42,28 @@
 //           ))}
 //       </ul>
 //       )
-      
+
 //       <Outlet />
 //     </div>
 //   );
 // }
 // export default Home;
 
-import { useEffect, useState } from "react";
-import {  Outlet, Link } from 'react-router-dom';
-import  {fetchPopularFilms} from '../api/api'
+import { useEffect, useState } from 'react';
+import { Outlet, Link } from 'react-router-dom';
+import { fetchPopularFilms } from '../api/api';
 
 const Home = () => {
   const [popularFilm, setPopularFilm] = useState([]);
 
   useEffect(() => {
-       fetchPopularFilms()
-         .then(data => {
-           setPopularFilm(data);
-         })
-         .catch(error => {
-           console.error(error);
-         });
+    fetchPopularFilms()
+      .then(data => {
+        setPopularFilm(data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
   }, []);
 
   return (
@@ -82,9 +77,9 @@ const Home = () => {
             </div>
           ))}
       </ul>
-      )
+   
       <Outlet />
     </div>
   );
-}
+};
 export default Home;

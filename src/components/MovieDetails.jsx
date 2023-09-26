@@ -62,33 +62,30 @@ import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
-import { fetchMovieData, getFilmById } from '../api/api';
+import { fetchMovieData } from '../api/api';
 
 
 const MovieDetails = () => {
   const { movieId } = useParams();
-  const [popularFilm, setPopularFilm] = useState([]);
   const [movieData, setMovieData] = useState([]);
 
-  console.log(movieData);
-  // const getFilmById = filmId => {
-  //   return popularFilm.find(film => film.id === filmId);
-  // };
+  const getFilmById = filmId => {
+    return movieData.find(film => film.id === filmId);
+  };
+  console.log(getFilmById);
 
   useEffect(() => {
-  fetchMovieData(movieId)
-    .then(data => {
-      setMovieData(data);
-    })
-    .catch(error => {
-      console.error(error);
-    });
+    fetchMovieData(movieId)
+      .then(data => {
+        setMovieData(data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
   }, [movieId]);
-
 
   const { id, title, poster_path, backdrop_path } = movieData;
 
-    const filmById = getFilmById(popularFilm, movieId);
 
   return (
     <div>

@@ -61,6 +61,6 @@ export async function fetchMovieData(movieId) {
 }
 
 
-export function getFilmById(films, filmId) {
-  return films.find(film => film.id === filmId);
-}
+// export function getFilmById(films, filmId) {
+//   return films.find(film => film.id === filmId);
+// }
