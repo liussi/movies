@@ -1,13 +1,27 @@
 {
   "files": {
     "main.css": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.4e609725.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.c7099bbd.js",
+    "static/js/485.6cfc08e7.chunk.js": "/goit-react-hw-05-movies/static/js/485.6cfc08e7.chunk.js",
+    "static/js/691.b7e823b0.chunk.js": "/goit-react-hw-05-movies/static/js/691.b7e823b0.chunk.js",
+    "static/js/170.af41b3ad.chunk.js": "/goit-react-hw-05-movies/static/js/170.af41b3ad.chunk.js",
+    "static/js/736.b429315a.chunk.js": "/goit-react-hw-05-movies/static/js/736.b429315a.chunk.js",
+    "static/js/246.fee81efa.chunk.js": "/goit-react-hw-05-movies/static/js/246.fee81efa.chunk.js",
+    "static/js/279.06246e2f.chunk.js": "/goit-react-hw-05-movies/static/js/279.06246e2f.chunk.js",
+    "static/js/355.fb034e59.chunk.js": "/goit-react-hw-05-movies/static/js/355.fb034e59.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
     "main.7acaea2f.css.map": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css.map",
-    "main.4e609725.js.map": "/goit-react-hw-05-movies/static/js/main.4e609725.js.map"
+    "main.c7099bbd.js.map": "/goit-react-hw-05-movies/static/js/main.c7099bbd.js.map",
+    "485.6cfc08e7.chunk.js.map": "/goit-react-hw-05-movies/static/js/485.6cfc08e7.chunk.js.map",
+    "691.b7e823b0.chunk.js.map": "/goit-react-hw-05-movies/static/js/691.b7e823b0.chunk.js.map",
+    "170.af41b3ad.chunk.js.map": "/goit-react-hw-05-movies/static/js/170.af41b3ad.chunk.js.map",
+    "736.b429315a.chunk.js.map": "/goit-react-hw-05-movies/static/js/736.b429315a.chunk.js.map",
+    "246.fee81efa.chunk.js.map": "/goit-react-hw-05-movies/static/js/246.fee81efa.chunk.js.map",
+    "279.06246e2f.chunk.js.map": "/goit-react-hw-05-movies/static/js/279.06246e2f.chunk.js.map",
+    "355.fb034e59.chunk.js.map": "/goit-react-hw-05-movies/static/js/355.fb034e59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.4e609725.js"
+    "static/js/main.c7099bbd.js"
   ]
 }
