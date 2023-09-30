@@ -61,6 +61,15 @@ export async function fetchMovieData(movieId) {
 }
 
 
-// export function getFilmById(films, filmId) {
-//   return films.find(film => film.id === filmId);
-// }
+export async function fetchSearchMovies(movies) {
+  try {
+    const response = await axios.get(
+      `${baseUrl}/search/movie?query=${movies}&include_adult=false&language=en-US&page=1`,
+      apiOptions
+    );
+    return response.data.results;
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+}
