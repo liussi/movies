@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { fetchMovieData } from '../../api/api';
 import { FaArrowLeft } from 'react-icons/fa';
