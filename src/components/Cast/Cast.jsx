@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchCast } from '../../api/api';
-import {ActorImage, Container, ActorContainer } from './Cast.styled'
+import {ActorImage, Container, ActorContainer, List } from './Cast.styled'
 
 const Cast = () => {
   const [cast, setCast] = useState([]);
@@ -22,7 +22,7 @@ const Cast = () => {
 
   return (
     <Container>
-      <ul>
+      <List>
         {cast.map((actor, index) => (
           <ActorContainer key={index}>
             <ActorImage
@@ -34,7 +34,7 @@ const Cast = () => {
             <p>Character : {actor.character}</p>
           </ActorContainer>
         ))}
-      </ul>
+      </List>
     </Container>
   );
 };

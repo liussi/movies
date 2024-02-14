@@ -18,4 +18,12 @@ const ActorImage = styled.img`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
-export { ActorImage, Container, ActorContainer };
+const List = styled.ul`
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+`
+
+
+
+export { ActorImage, Container, ActorContainer ,List};

@@ -2,12 +2,16 @@ import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 
 const Container = styled.div`
-  max-width: 800px;
-  padding: 20px;
+  padding: 40px;
 `;
 
+const Wrapper = styled.div`
+   display: flex;
+    justify-content: center;
+`
 const SearchForm = styled.form`
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
   margin-left: 30px;
@@ -43,13 +47,30 @@ const SearchForm = styled.form`
 
 const FilmLink = styled(Link)`
   display: block;
-  font-size: 1.2rem;
-  color: #007bff;
+  font-size: 20px;
+ 
+  color: #c66c06;
   text-decoration: none;
   margin: 10px 0;
-
-  &:hover {
-    text-decoration: underline;
+font-weight: bold; 
+border-radius: 25%;
+padding: 10px;
+    transition: box-shadow 0.3s;
+   &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
   }
 `;
-export { FilmLink, SearchForm, Container };
+
+
+const List = styled.ul`
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+`
+
+const Item = styled.li`
+   width: calc(33.33% - 10px); 
+ 
+
+`;
+export { FilmLink, SearchForm, Container,Wrapper ,List,Item};

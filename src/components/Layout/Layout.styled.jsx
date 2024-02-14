@@ -2,10 +2,9 @@ import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
 const Container = styled.div`
-  background: #fff;
-  color: #333;
+  background: #0d0c0c;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+   box-shadow: 0 4px 10px rgba(236, 117, 6, 0.605);
 `;
 
 
@@ -21,12 +20,16 @@ const ListItem = styled.li`
 `;
 
 const NavLinkStyled = styled(NavLink)`
-  color: #333; 
+  color: #f0a952; 
   text-decoration: none;
+  padding: 15px 20px;
   font-size: 18px; 
+  border-radius: 25%;
 
-  &:hover {
-    text-decoration: underline;
+   transition: box-shadow 0.3s;
+   
+   &:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
   }
 
   &.active {

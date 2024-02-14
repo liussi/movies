@@ -14,6 +14,9 @@ import {
   Span,
   Wrapper,
   LinkContainer,
+  Title,
+  WrapInfo,
+  FilmLink,
 } from './MovieDetails.styled';
 
 const MovieDetails = () => {
@@ -56,7 +59,7 @@ const MovieDetails = () => {
           alt={title}
         />
         <InfoContainer>
-          <h2>{title}</h2>
+          <Title>{title}</Title>
           <Text>
             User Score: <Span>{Math.floor(popularity)}%</Span>
           </Text>
@@ -69,13 +72,16 @@ const MovieDetails = () => {
         </InfoContainer>
       </Container>
       <Wrapper>
-        <h2>Additional information</h2>
-        <li>
-          <NavLink to="cast">Cast</NavLink>
+        <Title>Additional information</Title>
+        <WrapInfo>
+           <li>
+          <FilmLink to="cast">Cast</FilmLink>
         </li>
         <li>
-          <NavLink to="reviews">Reviews</NavLink>
+          <FilmLink to="reviews">Reviews</FilmLink>
         </li>
+        </WrapInfo>
+       
       </Wrapper>
       <Outlet />
     </div>

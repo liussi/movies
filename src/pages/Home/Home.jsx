@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { fetchPopularFilms } from '../../api/api';
-import {FilmLink, Title, TrendingContainer} from './Home.styled'
+import {FilmLink, Item, List, Title, TrendingContainer} from './Home.styled'
 
 const Home = () => {
   const [popularFilm, setPopularFilm] = useState([]);
@@ -21,16 +21,16 @@ const Home = () => {
     <div>
       <TrendingContainer>
         <Title>Trending today</Title>
-        <ul>
+        <List>
           {popularFilm &&
             popularFilm.map(film => (
-              <div key={film.id}>
+              <Item key={film.id}>
                 <FilmLink to={`/movies/${film.id.toString()}`} state={location}>
                   {film.title || film.name}
                 </FilmLink>
-              </div>
+              </Item>
             ))}
-        </ul>
+        </List>
       </TrendingContainer>
       <Outlet />
     </div>

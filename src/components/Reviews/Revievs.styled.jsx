@@ -10,4 +10,5 @@ const ContentParagraph = styled.p`
   color: #666;
 `;
 
+
 export { AuthorHeading, ContentParagraph };
