@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { fetchPopularFilms } from '../../api/api';
-import {FilmLink, Item, List, Title, TrendingContainer} from './Home.styled'
+import { FilmLink, Item, List, Title, TrendingContainer } from './Home.styled'
 
-const Home = () => {
+function Home ()  {
   const [popularFilm, setPopularFilm] = useState([]);
   const location = useLocation();
 

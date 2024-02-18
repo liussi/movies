@@ -18,7 +18,7 @@ import {
   FilmLink,
 } from './MovieDetails.styled';
 
-const MovieDetails = () => {
+function MovieDetails ()  {
   const { movieId } = useParams();
   const [movieData, setMovieData] = useState([]);
   const location = useLocation();

@@ -1,9 +1,9 @@
 import { useEffect, useState} from 'react';
 import { Outlet, useSearchParams, useLocation } from 'react-router-dom';
 import { fetchSearchMovies } from '../../api/api';
-import {  SearchForm, Container, FilmLink, Wrapper, Item, List } from './Movies.styled';
+import { SearchForm, Container, FilmLink, Wrapper, Item, List } from './Movies.styled';
 
-const Movies = () => {
+function Movies ()  {
   const [movies, setMovies] = useState([]);
   const [serchParams, setSearchParams] = useSearchParams();
   const moviesId = serchParams.get('moviesId');

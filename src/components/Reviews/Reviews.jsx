@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { fetchReviews } from '../../api/api';
 import {ContentParagraph,AuthorHeading} from './Revievs.styled'
 
-const Reviews = () => {
+function Reviews () {
   const [rewiews, setRewiews] = useState([]);
   const { movieId } = useParams();
 

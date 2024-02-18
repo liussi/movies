@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { fetchCast } from '../../api/api';
 import {ActorImage, Container, ActorContainer, List } from './Cast.styled'
 
-const Cast = () => {
+function Cast  ()  {
   const [cast, setCast] = useState([]);
   const { movieId } = useParams();
   const urlImg = 'https://image.tmdb.org/t/p/w500';
